@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        
+        body{
+            margin : 0px;
+            padding: 0px;
+            
+        }
+        #mybody{
+            margin : 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container{
+            border: 1px solid crimson;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-top: 16px;
+            width: 400px;
+            height: 500px;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+        }
+        .container:hover{
+            border: 1px solid greenyellow;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .child1{
+            padding: 32px;
+
+        }
+        .img1{
+            width: 120px;
+            height: 64px;
+        }
+        h1{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 10px;
+          text-align: center;  
+        }
+        .p1{
+            margin:0px;
+            font-weight: 800px;
+         font-size: 14px;     
+        }
+        .p2{
+            display: grid;
+            grid-template-columns: 20% 70%;
+            margin-left: 30px;
+        }
+        input{
+            border-radius: 4px;
+            border-color: rgba(128, 128, 128, 0.226);
+            border-width: 1.5px;
+            width: 90%;
+            height: 30px;
+            margin: 5px 0px;
+        }
+        input::placeholder{
+            font-size: 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        a{
+            word-spacing:0.1rem ;
+            margin: 0px;
+            text-decoration: none;
+            font-size: 14px;
+            padding-left: 45%;
+            color: blue;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .butt1{
+            border-radius: 4px;
+            border-color: rgba(128, 128, 128, 0.226);
+            color: rgba(0, 0, 0, 0.377);
+            padding:15px 0px 25px 0px;
+            border-width: 1.5px;
+            width: 92%;
+            height: 30px;
+            margin: 25px 0px;
+            font-weight: 600;
+        }
+        .butt1:hover{
+            border-color: rgba(0, 0, 0, 0.226);
+            background-color: rgba(27, 228, 20, 0.733);
+            color: white;
+        }
+        .butt2{
+            border-radius: 4px;
+            border-color: rgba(128, 128, 128, 0.226);
+            color: rgba(0, 0, 0, 0.842);
+            border-width: 1.5px;
+            width: 92%;
+            height: 50px;
+            margin: 25px 0px;
+            font-weight: 600;
+        }
+        .butt2:hover{
+            border-color: rgba(0, 0, 0, 0.226);
+            background-color: rgba(20, 93, 230, 0.733);
+            color: white;
+        }
+        .img2{
+            height: 24px;
+            width: 24px;
+        }
+        .signup{
+            word-spacing:0.1rem ;
+            margin: 0px;
+            text-decoration: none;
+            font-size: 14px;
+            padding-left: 30%;
+            color: blue;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+#navbar {
+    display: flex;
+    height: 45px;
+    background-color: rgb(3, 5, 36);
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  #navbar > a {
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+  }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+
+    </div>
+    <div id="mybody">
+        <div class="container"><div><h1>Log In</h1></div>
+        <form class="child1">
+         <p class="p1">Email:</p><input type="email" required placeholder="Enter Email" id="email"><br><br>
+         <p class="p1">Password:<a href="#">Forgot Password ? </a></p><input type="password" required placeholder="Enter Password" id="password">
+         <button class="butt1" id="submit">SIGN IN</button>
+         <button class="butt2"><p class="p2"><img src="https://tse3.mm.bing.net/th?id=OIP.1Nl9otEDi23qnVEQXPJuKQHaHa&pid=Api&P=0&w=191&h=191" class="img2" />CONTINUE WITH GOOGLE</p></button>
+        <p class="lastline">Don't have an account? <a href="./signup.html" class="signup">Sign Up</a></p>
+        </form>
+    </div>
+</div>
+    
+    
+</body>
+</html>
+<script src="./scripts/login.js"></script>

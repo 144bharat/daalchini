@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#top{
+    background-color: rgba(11, 192, 117, 0.591);
+    color: white;
+    display:flex;
+    width: 100%;
+    font-size: 3.0rem;
+    font-family:cursive;
+    /* text-align: center; */
+}
+#top>img{
+    border-radius: 60%;
+    height: 80px;
+    width: 85px;
+    margin-left:40px;
+    margin-right: 5px;
+}
+#container{
+    width:100%;
+    margin:40px;
+}
+#container>div{
+    display: grid;
+    grid-template-columns: 10% 65% 25%;
+    border-bottom: 1px solid grey;  
+    gap: 1%; 
+    margin-top: 2%;
+}
+
+#container>div>div{
+    width:100%;
+    height: 80px;
+}
+#container>div>div>img{
+    width: 100%;
+    height:100%;
+}
+
+#container>div>div+div{
+    width:50%;
+}
+#container>div>div+div>h2{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(28, 24, 24);
+}
+
+#container>div>div+div>h4,#container>div>div+div+div+div{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: grey;
+    font-style: italic;
+ }
+
+.strikemyself{
+    text-decoration: line-through red;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width:40%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.btn,.btn>button{
+    background: rgb(11, 192, 116);
+    border: none;
+    padding:2px 6px;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+    font-family: cursive;
+    gap: 1px;
+    text-align: center;
+}
+.minusBtn,.plusBtn{
+    display: none;
+}
+
+#container>div>div+div+div+div{
+   font-size: 14px;
+   display:grid;
+   gap:15px;
+   grid-template-columns: repeat(2, 1fr);
+   height: fit-content;
+   margin:10% 10%;
+}
+#navbar{
+    position: fixed;
+    top: 560px;
+    background-color: rgba(11, 192, 117);
+    width:100%;
+    height:13%;
+}
+#navbar>a{
+    color:white;
+    font-weight: 550;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-left: 70%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#navbar>a>img{
+    position:fixed;
+    top:560px;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+#cartdetail{
+    text-align: center;
+    color: grey;
+    font-size: 1.6rem;
+    font-family:'Trebuchet MS';
+    font-style: italic;
+}
+#goback{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+}
+#goback>a{
+    font-weight: 700;
+    color:rgb(14, 225, 145);
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-left:40px;
+    margin-right: 5px;
+}
+
+#goback>img{
+    /* margin-top:10px; */
+    height: 100%;
+    width: 35px;
+    /* padding-top: 10px; */
+}
+#carttop{
+    display: grid;
+    margin:20px 30px;
+    grid-template-columns: 30% 50% 10%;
+}
+.carthead{
+    
+    color: rgb(61, 59, 59);
+    font-weight: 700;
+    font-size: 1.2rem;
+    }
+    #itemnumber{
+        margin-left: 10px;
+    }
